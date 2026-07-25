@@ -42,7 +42,7 @@ A full-stack event registration platform that allows users to browse events, reg
 
 ### Registration Page
 
-![Register](./ss/registration.png)
+![Register](./ss/registeration.png)
 
 ---
 
