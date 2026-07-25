@@ -1,78 +1,159 @@
-# ZENITH 2026 — Club Event Registration
+# Event Registration Website
 
-Registration portal for the Computer Science Club's annual fest. Students sign up, submit one
-registration, and can view, edit or delete it from a dashboard.
+A full-stack event registration platform that allows users to browse events, register securely, and manage their registrations through a responsive web interface. The application includes authentication, event management, and a streamlined registration workflow.
 
-## Stack
+## Features
 
-React (Vite) + Tailwind CSS on the frontend, Supabase for auth and the database.
+- User authentication and authorization
+- Browse available events
+- Register for events
+- View registered events
+- Admin event management
+- Responsive user interface
+- Secure backend API
+- Database-driven event storage
 
-## Project layout
+## Screenshots
+
+### Create User account 
+
+![Login](./ss/create.png)
+
+---
+
+### Verification mail
+
+![Confirm](./ss/confirm.png)
+
+---
+
+### Home Page
+
+![Home Page](./ss/landing.png)
+
+---
+
+
+### Events' Timeline Page
+
+![Events](./ss/timeline.png)
+
+---
+
+### Registration Page
+
+![Register](./ss/registration.png)
+
+---
+
+### Edit Registration
+
+![Registered](./ss/registered.png)
+
+
+## Tech Stack
+
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Other Tools
+- JWT Authentication
+- REST APIs
+- Git & GitHub
+
+## Project Structure
 
 ```
-src/
-  components/     shared UI: navbar, timeline, illustration, auth layout, route guard
-  hooks/useAuth   session state, exposed via context
-  pages/          Landing, Login, Signup, Register, Dashboard
-  utils/          form validation
-  supabaseClient  single Supabase client instance
-supabase/schema.sql   table + Row Level Security policies
+Event-Registration-Website/
+│
+├── client/          # Frontend
+├── server/          # Backend
+├── models/          # Database models
+├── routes/          # API routes
+├── middleware/      # Authentication & middleware
+├── controllers/     # Business logic
+└── README.md
 ```
 
-No `redux`, no extra abstraction layers — state lives where it's used, and the Supabase client
-is the only "backend" this app talks to.
+## Installation
 
-## 1. Create the Supabase project
-
-1. Create a project at [supabase.com](https://supabase.com).
-2. Open the **SQL editor** and run `supabase/schema.sql`. This creates the `registrations`
-   table and locks it down with Row Level Security so a user can only read/edit/delete their
-   own row.
-3. Under **Authentication → Providers**, email/password is enabled by default — nothing else
-   to configure. Optionally turn off "Confirm email" under Authentication → Settings while
-   testing locally, so sign-up logs you in immediately.
-4. Copy your **Project URL** and **anon public key** from Project Settings → API.
-
-## 2. Run locally
+Clone the repository
 
 ```bash
-cp .env.example .env      # paste in your Project URL + anon key
-npm install
-npm run dev
+git clone https://github.com/restapi404/Event-Registration-Website.git
 ```
 
-## 3. Deploy
+Navigate to the project
 
-Any static host works since this builds down to plain HTML/CSS/JS in `dist/`. Easiest options:
+```bash
+cd Event-Registration-Website
+```
 
-**Vercel** (recommended, zero config for Vite)
-1. Push this repo to GitHub.
-2. [vercel.com](https://vercel.com) → New Project → import the repo.
-3. Add the two vars from `.env.example` under Project Settings → Environment Variables.
-4. Deploy — Vercel auto-detects Vite (`npm run build`, output `dist`).
+Install dependencies
 
-**Netlify**
-1. [netlify.com](https://netlify.com) → Add new site → Import from Git.
-2. Build command `npm run build`, publish directory `dist`.
-3. Add the same two env vars under Site settings → Environment variables.
+```bash
+npm install
+```
 
-**Cloudflare Pages**
-1. Connect the repo, framework preset "Vite".
-2. Build command `npm run build`, output directory `dist`, add the env vars.
+Create a `.env` file and configure the required environment variables.
 
-Whichever you pick, the env vars must be set **before** the first deploy — Vite bakes them into
-the build at build time, not at runtime.
+Start the backend
 
-## How the data flows
+```bash
+npm run server
+```
 
-- Sign up / log in → Supabase Auth issues a session, held in `AuthProvider`.
-- Submitting `/register` inserts one row into `registrations` tied to `auth.uid()`.
-- `/dashboard` reads that row back, and lets you update or delete it in place.
-- RLS policies mean this all works with the public anon key — there's no server code needed,
-  and no user can ever read another student's data.
+Start the frontend
 
-## Design notes
+```bash
+npm start
+```
 
-Palette and split-panel layout are original to this app (deep teal / mint / gold), themed
-around the event itself — a stage, spotlight beams and a live-signal line — rather than reusing
-any reference imagery.
+## Screenshots
+
+Add screenshots or GIFs of:
+
+- Home Page
+- Event Listings
+- Registration Form
+- Dashboard
+- Admin Panel
+
+## Future Improvements
+
+- Email confirmation after registration
+- QR code based event check-in
+- Payment gateway integration
+- Event reminders
+- Search and filtering
+- Analytics dashboard
+- Role-based permissions
+
+## Learning Outcomes
+
+This project helped strengthen my understanding of:
+
+- REST API development
+- Authentication using JWT
+- CRUD operations
+- MongoDB data modeling
+- Frontend and backend integration
+- State management
+- Responsive UI design
+- Version control with Git
+
+## Author
+
+**Rithu Prabhu**
+
+GitHub: https://github.com/restapi404
