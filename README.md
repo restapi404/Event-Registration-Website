@@ -2,6 +2,8 @@
 
 A full-stack event registration platform that allows users to browse events, register securely, and manage their registrations through a responsive web interface. The application includes authentication, event management, and a streamlined registration workflow.
 
+**Live Demo**: [Link](https://event-registration-website-nqgo.vercel.app/)
+
 ## Features
 
 - User authentication and authorization
