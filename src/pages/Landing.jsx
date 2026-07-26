@@ -21,7 +21,7 @@ export default function Landing() {
               XXXX Club presents
             </span>
             <h1 className="mt-5 animate-fade-up text-4xl font-bold leading-tight [animation-delay:100ms] sm:text-5xl md:text-5xl">
-              ZENITH 2026
+              EVENT 2026
             </h1>
             <p className="mt-4 max-w-md animate-fade-up text-white/70 [animation-delay:200ms]">
               Two days of tech talks, hackathons, competitions and a culture night —
@@ -50,9 +50,9 @@ export default function Landing() {
       <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <Reveal className="md:col-span-1">
-            <h2 className="text-2xl font-bold text-teal-900">What is ZENITH?</h2>
+            <h2 className="text-2xl font-bold text-teal-900">What is EVENT?</h2>
             <p className="mt-3 text-sm text-ink/70">
-              ZENITH is our department's flagship annual fest, bringing together students from
+              EVENT is our department's flagship annual fest, bringing together students from
               every branch for two days of building, competing and celebrating.
             </p>
           </Reveal>
@@ -98,7 +98,7 @@ export default function Landing() {
       </Reveal>
 
       <footer className="border-t border-teal-900/10 py-6 text-center text-xs text-ink/50">
-        Organised by the XXXX Club · ZENITH 2026
+        Organised by the XXXX Club · EVENT 2026
       </footer>
     </div>
   )
