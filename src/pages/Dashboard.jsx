@@ -102,7 +102,7 @@ export default function Dashboard() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-teal-900">Your registration</h1>
-            <p className="mt-1 text-sm text-ink/60">ZENITH 2026 · Confirmed</p>
+            <p className="mt-1 text-sm text-ink/60">EVENT 2026 · Confirmed</p>
           </div>
           <span className="animate-pulse-glow rounded-full bg-mint-400/20 px-3 py-1 text-xs font-semibold text-teal-700">
             Registered

@@ -31,7 +31,7 @@ export default function Login() {
   }
 
   return (
-    <AuthLayout eyebrow="Welcome back" title="Log in to ZENITH" subtitle="Access your registration anytime.">
+    <AuthLayout eyebrow="Welcome back" title="Log in to EVENT" subtitle="Access your registration anytime.">
       <form onSubmit={handleSubmit} noValidate className="space-y-4">
         <div>
           <label className="label" htmlFor="email">Email</label>

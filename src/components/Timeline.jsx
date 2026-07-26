@@ -5,7 +5,7 @@ const SCHEDULE = [
   { date: 'Aug 10', label: 'Registrations open', detail: 'Portal goes live for all departments', icon: DoorOpen },
   { date: 'Aug 28', label: 'Registrations close', detail: 'Last date to submit your entry', icon: DoorClosed },
   { date: 'Sep 02', label: 'Confirmation & passes', detail: 'Entry passes emailed to registered students', icon: Mail },
-  { date: 'Sep 12–13', label: 'ZENITH 2026', detail: 'Two days of tech talks, competitions & culture night', icon: Sparkles, highlight: true },
+  { date: 'Sep 12–13', label: 'EVENT 2026', detail: 'Two days of tech talks, competitions & culture night', icon: Sparkles, highlight: true },
 ]
 
 export default function Timeline() {

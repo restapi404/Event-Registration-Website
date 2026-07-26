@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 border-b border-teal-900/5 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link to="/" className="font-display text-lg font-bold tracking-tight text-teal-700 transition-transform hover:scale-105">
-          ZENITH<span className="text-gold">'26</span>
+          EVENT<span className="text-gold">'26</span>
         </Link>
 
         <nav className="flex items-center gap-3 sm:gap-4">
