@@ -15,44 +15,6 @@ A full-stack event registration platform that allows users to browse events, reg
 - Secure backend API
 - Database-driven event storage
 
-## Screenshots
-
-### Create User account 
-
-![Login](./ss/create.png)
-
----
-
-### Verification mail
-
-![Confirm](./ss/confirm.png)
-
----
-
-### Home Page
-
-![Home Page](./ss/landing.png)
-
----
-
-
-### Events' Timeline Page
-
-![Events](./ss/timeline.png)
-
----
-
-### Registration Page
-
-![Register](./ss/registeration.png)
-
----
-
-### Edit Registration
-
-![Registered](./ss/registered.png)
-
-
 ## Tech Stack
 
 ### Frontend
